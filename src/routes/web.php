@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
+    $text = (new CodeBot\Message\Text(1))->message('hello');
+    dd($text);
     return view('welcome');
 });

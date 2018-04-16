@@ -1,0 +1,29 @@
+php:
+  container_name: chatbot-php
+  build: ./.docker/site
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - .:/var/www/chatbot
+    - ./.docker/site/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+  links:
+    - redis
+    - mysql
+redis:
+  container_name: chatbot-redis
+  image: redis:3.2.6
+  ports:
+    - "6379:6379"
+  volumes:
+    - /var/lib/redis
+mysql:
+  container_name: chatbot-mysql
+  image: mysql:5.7
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./.docker/mysql:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=chatbot

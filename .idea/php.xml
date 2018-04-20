@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/sdk/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/sdk/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/sdk/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/sdk/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/sdk/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/sdk/vendor/composer" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/sdk/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/sdk/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/sdk/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/sdk/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/sdk/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/sdk/vendor/phpdocumentor/type-resolver" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/sdk/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>

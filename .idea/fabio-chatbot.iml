@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/sdk/src" isTestSource="false" packagePrefix="CodeBot\" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

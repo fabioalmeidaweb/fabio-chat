@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b183c2d-fc2d-4513-a6b0-859763f65f83" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/botfb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/site/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/site/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/BotController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/BotController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/botfb.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/botfb.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,14 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BotController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/BotController.php">
+      <file leaf-file-name="botfb.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/config/botfb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="e#40#66#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="130">
+              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -184,45 +174,6 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="sdk" type="cbb8eebc:String" user="sdk" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="sdk" type="cbb8eebc:String" user="sdk" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="sdk" type="cbb8eebc:String" user="sdk" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="Message" type="cbb8eebc:String" user="Message" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="sdk" type="cbb8eebc:String" user="sdk" />
-              <item name="tests" type="cbb8eebc:String" user="tests" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="sdk" type="cbb8eebc:String" user="sdk" />
-              <item name="tests" type="cbb8eebc:String" user="tests" />
-              <item name="unity" type="cbb8eebc:String" user="unity" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="sdk" type="cbb8eebc:String" user="sdk" />
-              <item name="tests" type="cbb8eebc:String" user="tests" />
-              <item name="unity" type="cbb8eebc:String" user="unity" />
-              <item name="Message" type="cbb8eebc:String" user="Message" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
               <item name="src" type="cbb8eebc:String" user="src" />
             </path>
             <path>
@@ -250,31 +201,7 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
               <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="vendor" type="cbb8eebc:String" user="vendor" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="vendor" type="cbb8eebc:String" user="vendor" />
-              <item name="fabioalmeidaweb" type="cbb8eebc:String" user="fabioalmeidaweb" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="vendor" type="cbb8eebc:String" user="vendor" />
-              <item name="fabioalmeidaweb" type="cbb8eebc:String" user="fabioalmeidaweb" />
-              <item name="facebook-bot-sdk" type="cbb8eebc:String" user="facebook-bot-sdk" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="fabio-chatbot" type="cbb8eebc:String" user="fabio-chatbot" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="vendor" type="cbb8eebc:String" user="vendor" />
-              <item name="fabioalmeidaweb" type="cbb8eebc:String" user="fabioalmeidaweb" />
-              <item name="facebook-bot-sdk" type="cbb8eebc:String" user="facebook-bot-sdk" />
-              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="config" type="cbb8eebc:String" user="config" />
             </path>
           </expand>
           <select />
@@ -310,12 +237,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524156521784</updated>
       <workItem from="1524156524877" duration="5133000" />
-      <workItem from="1524236583801" duration="17072000" />
+      <workItem from="1524236583801" duration="17329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22205000" />
+    <option name="totallyTimeSpent" value="22462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,13 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/botfb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -554,6 +474,13 @@
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/botfb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>

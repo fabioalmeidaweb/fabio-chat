@@ -13,7 +13,8 @@ class BotController extends Controller
     public function subscribe()
     {
         $webhook = new WebHook();
-        $subscribe = $webhook->check('var');
+        $subscribe = $webhook->check(config('botfb.validationToken'));
+
         if (!$subscribe) {
             abort(403, 'Unauthorized action.');
         }
@@ -27,7 +28,7 @@ class BotController extends Controller
         $message = $sender->getMessage();
 
         $text = new Text($senderId);
-        $callSendApi = new CallSendApi('asaa');
+        $callSendApi = new CallSendApi(config('botfb.pageAccessToken'));
 
         $callSendApi->make($text->message('Oi, eu sou um bot....'));
         $callSendApi->make($text->message('VOcê digitou: ' . $message));

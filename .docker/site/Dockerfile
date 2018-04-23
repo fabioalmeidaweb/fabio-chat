@@ -8,7 +8,10 @@ RUN apt-get install -y locales \
         && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
         && locale-gen
 
-RUN apt-get update
+# Install Heroku CLI
+RUN apt-get install gnupg gnupg2 gnupg1 wget
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
 
 RUN docker-php-ext-install pdo pdo_mysql
 RUN pecl install redis-4.0.0 && docker-php-ext-enable redis

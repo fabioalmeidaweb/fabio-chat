@@ -7,9 +7,13 @@ php:
   volumes:
     - .:/var/www/chatbot
     - ./.docker/site/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    - ./.docker/site/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
   links:
     - redis
     - mysql
+  environment:
+    XDEBUG_CONFIG: remote_host=172.17.0.1
+    PHP_IDE_CONFIG: "serverName=xdebug-docker"
 redis:
   container_name: chatbot-redis
   image: redis:3.2.6

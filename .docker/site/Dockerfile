@@ -9,12 +9,12 @@ RUN apt-get install -y locales \
         && locale-gen
 
 # Install Heroku CLI
-RUN apt-get install gnupg gnupg2 gnupg1 wget
-wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
-
+RUN apt-get -y install gnupg gnupg2 gnupg1 wget
+RUN wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 RUN docker-php-ext-install pdo pdo_mysql
 RUN pecl install redis-4.0.0 && docker-php-ext-enable redis
+RUN pecl install xdebug-2.6.0 && docker-php-ext-enable xdebug
 
 ADD apache2.conf /etc/apache2/sites-enabled/000-default.conf
 ADD chatbot-site.conf /etc/apache2/sites-enabled/chatbot-site.conf
@@ -25,6 +25,8 @@ RUN a2enmod rewrite
 RUN a2enmod ssl
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+ENV COMPOSER_ALLOW_SUPERUSER 1
+ENV COMPOSER_DISABLE_XDEBUG_WARN 1
 
 WORKDIR /var/www/chatbot
 

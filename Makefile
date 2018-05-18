@@ -7,7 +7,7 @@ up:
 	docker-compose up -d
 
 in:
-	docker exec -it chatbot-php /bin/bash
+	docker exec -it -w /var/www/chatbot/src/ chatbot-php /bin/bash
 
 stop:
 	docker-compose stop

@@ -1,14 +1,20 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
 // Variables
 @import "variables";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// Materialize
+@import '~materialize-css/sass/materialize';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+#main-nav {
+  a {
+    transition: .2s all ease;
+  }
+  a:hover,
+  a:focus {
+    color: #cccccc;
+    text-decoration: none;
+  }
 }

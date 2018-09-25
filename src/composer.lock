@@ -314,16 +314,16 @@
         },
         {
             "name": "fabioalmeidaweb/facebook-bot-sdk",
-            "version": "1.2.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabioalmeidaweb/facebook-bot-sdk.git",
-                "reference": "d0aa59d138a20a52ffc589752385c73ecaf20ca4"
+                "reference": "3569bde3bf1c5badd60520995606884aadff4c46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabioalmeidaweb/facebook-bot-sdk/zipball/d0aa59d138a20a52ffc589752385c73ecaf20ca4",
-                "reference": "d0aa59d138a20a52ffc589752385c73ecaf20ca4",
+                "url": "https://api.github.com/repos/fabioalmeidaweb/facebook-bot-sdk/zipball/3569bde3bf1c5badd60520995606884aadff4c46",
+                "reference": "3569bde3bf1c5badd60520995606884aadff4c46",
                 "shasum": ""
             },
             "require": {
@@ -349,7 +349,7 @@
                     "email": "fabio.anatito@gmail.com"
                 }
             ],
-            "time": "2018-05-17T16:54:30+00:00"
+            "time": "2018-07-24T11:32:43+00:00"
         },
         {
             "name": "fideloper/proxy",

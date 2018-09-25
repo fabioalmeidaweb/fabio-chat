@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use CodeBot\Message\Image;
-use CodeBot\Message\Text;
+use CodeBot\Element\Product;
 use CodeBot\SenderRequest;
 use CodeBot\Element\Button;
-use CodeBot\TemplatesMessage\ButtonsTemplate;
 use CodeBot\WebHook;
-use CodeBot\CallSendApi;
+
+use CodeBot\Build\Solid;
 use Illuminate\Http\Request;
 
 class BotController extends Controller
@@ -29,20 +28,47 @@ class BotController extends Controller
         $sender = new SenderRequest();
         $senderId = $sender->getSenderId();
         $message = $sender->getMessage();
+        $postback = $sender->getPostback();
 
-        $callSendApi = new CallSendApi(config('botfb.pageAccessToken'));
+        $bot = Solid::factory();
+        Solid::pageAccessToken(config('botfb.pageAccessToken'));
+        Solid::setSenderId($senderId);
 
-        $text = new Text($senderId);
-        $callSendApi->make($text->message('Oi, eu sou um bot....'));
-        $callSendApi->make($text->message('Você digitou: ' . $message));
+        if ($postback) {
+            if (is_array($postback)) {
+                $postback = json_encode($postback);
+            }
+            $bot->message('text', 'Você chamou o postback ' .  $postback);
+            return '';
+        }
 
-        $image = new Image($senderId);
-        $callSendApi->make($image->message('http://colorfully.eu/wp-content/uploads/2012/05/summer-beach-sand-welcome-timeline-facebook-cover.jpg'));
+        $bot->message('text', 'Oi, eu sou um bot....');
+        $bot->message('text', 'Você digitou: ' . $message);
+        $bot->message('image', 'http://colorfully.eu/wp-content/uploads/2012/05/summer-beach-sand-welcome-timeline-facebook-cover.jpg');
 
-        $message = new ButtonsTemplate($senderId);
-        $message->add(new Button('web_url', 'Google', 'https://www.google.com.br'));
-        $message->add(new Button('web_url', 'Drupal', 'https://www.drupal.org'));
-        $callSendApi->make($message->message('Can you test to open a site?'));
+        $buttons = [
+            new Button('web_url', null, 'https://google.com'),
+            new Button('web_url', 'Drupal', 'https://www.drupal.org')
+        ];
+        $bot->template('buttons', 'A big test!', $buttons);
+
+        $products = [
+            new Product(
+                'Product 1',
+                'http://www.twccomunicacao.com.br/restrito/img/noticias/2016/04/wb_moc_post-4-dicas-matadoras-para-vender-produtos-afiliados-600x600_011.png',
+                'A awesome product!',
+                new Button('web_url', null, 'https://google.com')
+            ),
+            new Product(
+                'Product 2',
+                'http://www.twccomunicacao.com.br/restrito/img/noticias/2016/04/wb_moc_post-4-dicas-matadoras-para-vender-produtos-afiliados-600x600_011.png',
+                'A awesome course!',
+                new Button('web_url', null, 'https://google.com')
+            )
+
+        ];
+        $bot->template('generic', '', $products);
+        $bot->template('list', '', $products);
 
         return '';
     }
